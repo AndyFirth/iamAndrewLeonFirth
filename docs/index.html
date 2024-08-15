@@ -15,6 +15,20 @@
             margin: 0;
             font-family: Arial, sans-serif;
         }
+        .ribbon {
+            width: 100%;
+            text-align: center;
+            padding: 10px 0;
+            background: rgba(255, 255, 255, 0.8);
+            position: absolute;
+            top: 0;
+        }
+        .ribbon img {
+            width: 30px;
+            height: 30px;
+            margin: 0 10px;
+            border-radius: 50%;
+        }
         .container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -23,6 +37,7 @@
             padding: 20px;
             background: rgba(255, 255, 255, 0.8);
             border-radius: 10px;
+            margin-top: 60px; /* Adjust for ribbon height */
         }
         .project {
             text-align: center;
@@ -42,6 +57,11 @@
     </style>
 </head>
 <body>
+    <div class="ribbon">
+        <img src="image1.png" alt="Image 1">
+        <img src="image2.png" alt="Image 2">
+        <img src="image3.png" alt="Image 3">
+    </div>
     <div class="container">
         <div class="project">
             <a href="project1.html">
